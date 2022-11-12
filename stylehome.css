@@ -1,0 +1,302 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.navbar{
+	display:flex;
+	align-items: center;
+	padding:20px;
+}
+nav{
+	flex:1;
+	text-align:right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type:none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right:20px;
+}
+nav ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #a9f1df;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition:0.5s;
+}
+nav ul li:hover::after{
+	width:100%;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.container{
+	max-width:1300px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+.row{
+	display:flex;
+	align-items:center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis:50%;
+	min-width:300px;
+}
+
+.col-2 h1{
+	font-size:50px;
+	line-height:60px;
+	margin:50px 0;
+	color:#fff;
+	
+}
+.col-2 .lable{
+	color:#daa520;
+}
+.btn{
+	display:inline-block;
+	background:#ff523b;
+	color:#fff;
+	padding:8px 30px;
+	margin:30px 0;
+	border-radius:30px;
+	transition:background 0.5s;
+}
+.btn:hover{
+	background:#563434;
+}
+.header{
+	background:url(images/bg.jpg)center no-repeat;/*radial-gradient(#e66465, #9198e5);*/
+	background-position:center center;
+	background-size:cover;
+	
+}
+.header .row{
+	margin-top:70px;
+}
+.categories{
+	margin:70px 0;
+}
+.col-3{
+	flex-basis:30%;
+	min-width:250px;
+	margin-bottom:30px;
+}
+.col-3 img{
+	width:100%;
+}
+.small-container{
+	max-width:1080px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+.col-4{
+	flex-basis:25%;
+	padding:10px;
+	min-width:200px;
+	margin-bottom:50px;
+	transition:transform 0.5s;
+}
+.col-4 img{
+	width:100%;
+}
+.title{
+	text-align:center;
+	margin:0 auto 80px;
+	position:relative;
+	line-height:60px;
+	color:#555;
+}
+.title::after{
+	content:'';
+	background: #ff523b;
+	width:80px;
+	height:5px;
+	border-radius:5px;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	transform: translateX(-50%)
+}
+h4{
+	color:#555;
+	font-weight:normal;
+}
+.col-4 p{
+	font-size:14px;
+}
+.rating .fa {
+	color:#ffa500;
+	
+}
+.rating .far{
+	color:#ffa500;
+}
+.rating .fas{
+	color:#ffa500;
+}
+.col-4:hover{
+	transform:translateY(-5px);
+}
+.col-2 .lable .cars {
+	font-weight:20;
+	font-size: 18px;
+	color:#000080;
+}
+.col-2 .lable{
+	font-size:19px;
+	margin-top:45px;
+	margin-bottom:45px;
+	color:#ff4d4d;
+}
+
+
+/*-----brands----*/
+.brands{
+	margin:100px auto;
+}
+.col-5{
+	width:160px;
+}
+.col-5 img{
+	width:100px;
+	cursor:pointer;
+	filter:grayscale(100%);
+}
+.col-5 img:hover{
+	filter:grayscale(0);
+}
+/*-----footer----*/
+.footer{
+	background:#a9a9a9;
+	color:#000000;
+	font-size:14px;
+	padding: 20px 0 10px;
+}
+.footer p{
+	color:#000000;
+}
+.footer h3{
+	color:#fefefa;
+	margin-bottom:20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+	min-width:250px;
+	margin-bottom:20px;
+}
+.footer-col-1{
+	flex-basis:30%;
+}
+.footer-col-2{
+	flex:1;
+	text-align:center;
+}
+.footer-col-2 img{
+	width:180px;
+	margin-bottom:20px;
+}
+.footer-col-3, .footer-col-4{
+	flex-basis:12%;
+	text-align:center;
+}
+ul{
+	list-style-type:none;
+}
+.footer hr{
+	border:none;
+	background:black;
+	height:1px;
+	margin: 20px 0;
+}
+.copyright{
+	text-align:center;
+}
+.menu-icon{
+	width:28px;
+	margin-left:20px;
+	display:none;
+}
+/*-----media query for menu----*/
+@media only screen and (max-width:800px){
+	nav ul{
+		position:absolute;
+		margin-top:50px;
+		top:70px;
+		left:0;
+		background:#333;
+		width:100%;
+		overflow:hidden;
+		transition:max-height 0.5s;
+	}
+	nav ul li{
+		display:block;
+		margin-right:50px;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	nav ul li a{
+		color:#fff;
+	}
+	.menu-icon{
+		display:block;
+		cursor:pointer;
+	}
+}
+
+.row-2{
+	justify-content:space-between;
+	margin: 100px auto 50px;
+}
+select{
+	border:1px solid #ff523b;
+	padding:5px;
+}
+select:focus{
+	outline:none;
+}
+.page-btn{
+	margin:0 auto 80px;
+}
+.page-btn span{
+	display:inline-block;
+	border: 1px solid #ff523b;
+	margin-left:10px;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	cursor:pointer;
+}
+.page-btn span:hover{
+	background:#ff523b;
+	color: #fff;
+}
+/*-----media query for less than 600 screen size----*/
+@media only screen and (max-width:600px){
+	.row{
+		text-align:center;
+	}
+	.col-2, .col-3, .col-4{
+		flex-basis:100%;
+	}
+	.col-2 .lable{
+		display:flex;
+		flex-wrap:wrap;
+	}
+}
